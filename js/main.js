@@ -251,6 +251,13 @@
       );
   };
 
+  var setUpMailButton = function() {
+    $('#contact-form').on('submit',function(event){
+      event.preventDefault();
+      emailjs.sendForm('contact_service','contact_form',this);
+    });
+  }
+  
   var stickyFunction = function() {
     var h = $(".image-content").outerHeight();
 
@@ -317,5 +324,8 @@
     stickyFunction();
     owlCrouselFeatureSlide();
     animateKeywords();
+    setUpMailButton();
+
+    emailjs.init("user_Pm9DNz8lFFxvCCALC4i7a");
   });
 })();
