@@ -324,8 +324,6 @@
     stickyFunction();
     owlCrouselFeatureSlide();
     animateKeywords();
-    setUpMailButton();
-
-    emailjs.init("user_Pm9DNz8lFFxvCCALC4i7a");
+    //setUpMailButton();
   });
 })();
